@@ -1,0 +1,39 @@
+page-filme {
+
+    .toolbar-md-secondary .bar-button-clear-md, 
+    .toolbar-md-secondary .bar-button-default-md, 
+    .toolbar-md-secondary .bar-button-outline-md, 
+    .toolbar-md-secondary .toolbar-title-md {
+        color: #79CDCD;
+    }
+
+    .flag {
+        float: right!important;
+        width: 32px;
+    }
+
+    .sub-titulo {
+        color: #545b62;
+    }
+
+    .foto {
+        width: 188px;
+        height: 270px;
+    }
+
+    .lbl {
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .dado {
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .p-1 {
+        margin-bottom: 6px;
+    }
+}

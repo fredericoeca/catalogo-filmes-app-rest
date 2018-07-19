@@ -1,0 +1,61 @@
+<ion-header>
+    <ion-navbar color="secondary">
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Filme</ion-title>
+      </ion-navbar>
+  </ion-header>
+
+<ion-content padding>
+  
+  <h5>{{filme.filme}}</h5>
+  <span class="sub-titulo">{{filme.tituloOriginal}}</span>
+  <hr />
+
+  <ion-row>
+    <ion-col>
+        <img class="foto" src="{{filme.cartaz}}" /> 
+    </ion-col>
+    <ion-col>
+      <img class="flag" src="assets/ban_pais/{{filme.paisSigla}}.gif" />
+      <div class="p-1">
+        <span class="lbl">Ano de lançamento</span><br /></div>
+      <div class="p-1">
+        <span class="dado">{{filme.lancamento}}</span><br /></div>
+      <div class="p-1">
+        <span class="lbl">País</span><br /></div>
+      <div class="p-1">
+        <span class="dado">{{filme.paisNome}}</span><br /></div>
+      <div class="p-1">
+        <span class="lbl">Idioma</span><br /></div>
+      <div class="p-1">
+        <span class="dado">{{filme.idioma}} ({{filme.idiomaSigla}})</span><br /></div>
+      <div class="p-1">
+        <span class="lbl">Distribuidor</span><br /></div>
+      <div class="p-1">
+        <span class="dado">{{filme.distribuidor}}</span><br /></div>
+      <div class="p-1">
+        <span class="lbl">Genero</span><br /></div>
+      <div class="p-1">
+        <span class="dado">{{filme.genero}}</span><br /></div>
+      <div class="p-1">
+        <span class="lbl">Duração</span><br /></div>
+      <div class="p-1">
+        <span class="dado">{{filme.duracao}}</span><br /></div>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <div class="p-1">
+        <span class="lbl">Sinopse</span><br /></div>
+      <p class="dado">{{filme.sinopse}}</p>
+      <div>
+
+      </div>
+    </ion-col>
+  </ion-row>
+
+    
+
+</ion-content>

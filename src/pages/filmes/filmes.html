@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar color="secondary">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Filmes</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card *ngFor="let f of filmes">
+    <ion-card-header class="bkg-titulo">
+      {{f.fil_nome}}
+    </ion-card-header>
+    <ion-card-content>
+      <ion-row>
+        <ion-col class="padd">
+          <p class="lbl">Lançamento</p>
+          <p class="dado">{{f.fil_lancamento}}</p>
+          <p class="lbl">País</p>
+          <p><img class="flag" src="assets/ban_pais/{{f.pai_sigla}}.gif" /></p>
+          <p class="lbl">Idioma</p>
+          <p class="dado">{{f.idi_nome}} ({{f.idi_sigla}})</p>
+          <p class="lbl">Distribuidor</p>
+          <p class="dado">{{f.dis_nome}}</p>
+          <p class="lbl">Genero</p>
+          <p class="dado">{{f.gen_nome}}</p>          
+        </ion-col>
+        <ion-col>
+          <button class="btn" (click)="goToFilme(f)" clear>
+            <img class="foto" src="{{f.fil_cartaz}}" />  
+          </button>
+        </ion-col>        
+      </ion-row>      
+    </ion-card-content>
+    
+  </ion-card>
+
+</ion-content>
