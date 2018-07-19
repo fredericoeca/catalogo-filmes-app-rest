@@ -1,0 +1,8 @@
+{
+  "name": "NetCinema",
+  "app_id": "f4274e78",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
